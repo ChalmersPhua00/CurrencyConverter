@@ -38,7 +38,7 @@ struct CurrencyManager {
     
     func performRequest() {
         if let url = URL(string:
-                            "https://openexchangerates.org/api/latest.json?app_id=6cd569091a00445db8388d0b3f7423d0") {
+                            "https://openexchangerates.org/api/latest.json?app_id=<API_KEY>") {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
                 if error != nil {
