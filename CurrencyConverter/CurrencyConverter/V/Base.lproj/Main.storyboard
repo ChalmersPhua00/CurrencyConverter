@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fB-fy-Uq0">
+                                <rect key="frame" x="0.0" y="604" width="414" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3r-n4-Ime">
+                                <rect key="frame" x="90" y="249" width="44" height="47"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.14117647058823529" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kel-TT-5qY">
+                                <rect key="frame" x="90" y="456" width="44" height="47"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.14117647059999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="4zD-Ub-dB0">
+                                <rect key="frame" x="239" y="247" width="130" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lNh-pE-zUV"/>
+                                    <constraint firstAttribute="width" constant="130" id="uGE-kQ-zKG"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.14117647059999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ra8-Fl-4iS">
+                                <rect key="frame" x="170" y="344" width="75" height="70"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="="/>
+                                <buttonConfiguration key="configuration" style="plain" title="=" titleAlignment="center">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.85490196080000003" green="0.85098039219999999" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="50"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.14117647059999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="convertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UXs-dw-rwT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMH-3W-WTc">
+                                <rect key="frame" x="239" y="454" width="130" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ivz-JC-qTt"/>
+                                    <constraint firstAttribute="width" constant="130" id="KkO-x2-JcU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.14117647059999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.97647058819999999" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9fB-fy-Uq0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5v4-pX-b8R"/>
+                            <constraint firstItem="9fB-fy-Uq0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7G7-UE-P1Q"/>
+                            <constraint firstItem="k3r-n4-Ime" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="205" id="Cp3-RF-uFk"/>
+                            <constraint firstItem="Ra8-Fl-4iS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="CtL-vl-yWZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4zD-Ub-dB0" secondAttribute="trailing" constant="45" id="Fug-uz-MDK"/>
+                            <constraint firstItem="k3r-n4-Ime" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="JvF-97-mJh"/>
+                            <constraint firstItem="kel-TT-5qY" firstAttribute="top" secondItem="k3r-n4-Ime" secondAttribute="bottom" constant="160" id="Kxa-c8-IZf"/>
+                            <constraint firstItem="9fB-fy-Uq0" firstAttribute="top" secondItem="Ra8-Fl-4iS" secondAttribute="bottom" constant="190" id="NdV-s4-Qpr"/>
+                            <constraint firstItem="kel-TT-5qY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="UNs-6p-A6J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ra8-Fl-4iS" secondAttribute="trailing" constant="169" id="X4c-1M-c4Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BMH-3W-WTc" secondAttribute="trailing" constant="45" id="YCN-El-JzE"/>
+                            <constraint firstItem="BMH-3W-WTc" firstAttribute="top" secondItem="4zD-Ub-dB0" secondAttribute="bottom" constant="157" id="YWc-SI-ajF"/>
+                            <constraint firstItem="Ra8-Fl-4iS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="cTk-pK-xxg"/>
+                            <constraint firstItem="4zD-Ub-dB0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="203" id="hqQ-aS-oB0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currencyOne" destination="kel-TT-5qY" id="w46-57-EVh"/>
+                        <outlet property="currencyOneLabel" destination="BMH-3W-WTc" id="XUd-gc-Ww4"/>
+                        <outlet property="currencyPicker" destination="9fB-fy-Uq0" id="egE-fh-fSd"/>
+                        <outlet property="currencyZero" destination="k3r-n4-Ime" id="WYO-cA-ony"/>
+                        <outlet property="currencyZeroTextField" destination="4zD-Ub-dB0" id="bgR-e5-rXe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+</document>
