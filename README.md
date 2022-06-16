@@ -11,6 +11,3 @@ Step 2 = Get an API key by signing up to the free plan
 
 Step 3 = Inside the performRequest() function of CurrencyManager.swift, replace <INSERT_KEY> with an API Key
 
-
-https://user-images.githubusercontent.com/107158272/174185521-b5b002a5-aac5-46e6-954d-c4510a65707c.mp4
-
