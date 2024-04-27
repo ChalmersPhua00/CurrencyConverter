@@ -1,5 +1,5 @@
 # CurrencyConverter
-An iOS app that retrieves live data from Open Exchange Rates API to allow users to perform currency conversion.
+A prototype iOS app that performs currency conversion.
 
 ___________________________________________________________________________________________________________________________________________________________
 
